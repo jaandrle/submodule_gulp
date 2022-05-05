@@ -5,7 +5,7 @@ Gulp utils – primary use as `git submodule`
 **Use**:
 ```bash
 cd TARGET_PATH
-git submodule add --depth=1 TARGET_REPO
+git submodule add --depth=1 git@github.com:jaandrle/submodule_gulp.git -b main
 ```
 … more info [`git submodule`](https://gist.github.com/jaandrle/b4836d72b63a3eefc6126d94c683e5b3).
 
