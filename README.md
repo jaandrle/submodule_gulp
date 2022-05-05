@@ -1,5 +1,5 @@
 # submodule_gulp
-Gulp utils – primary use as `git submodule`
+Gulp utils – primary use as `git submodule`.
 
 ## Use in your repo
 **Use**:
