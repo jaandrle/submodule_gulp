@@ -20,5 +20,5 @@ Suggested file tree is:
 …for using scripts, just `require` wanted one in `dist/`:
 ```javascript
 //gulpfile.js (see above)
-const cordova= require("./gulp/dist/task-cordova.js");
+const cordova= require("./gulp/submodule_gulp/dist/task-cordova.js");
 ```
