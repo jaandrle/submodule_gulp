@@ -14,7 +14,7 @@ function cordova(done){
         return done();
     }
     log(`\`cordova run android --target ${target}\``);
-    const cwd= join(__dirname, "../../");
+    const cwd= join(process.cwd(), "../");
     const log_file_path= join(cwd, 'build/gulp/build.log');
     let [ , build_time_prev ]= /RUN [A-Z]+ in (\d+)s/.exec((!existsSync(log_file_path) ? "" : readFileSync(log_file_path))) || [ null, "60" ];
     build_time_prev= parseInt(build_time_prev);
