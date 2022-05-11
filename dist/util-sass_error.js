@@ -8,7 +8,7 @@
  * .pipe(gulp.dest('../www/css/'))
  * .on("end", sass_error.load(done))
  * */
-exports.sass_error= {
+module.exports= {
     /** Místo `sass().on("error"` */
     save(sass){
         return sass().on("error", function sassError(e){
