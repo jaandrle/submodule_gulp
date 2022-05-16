@@ -1,3 +1,4 @@
+[![LTS+sub-branches](https://img.shields.io/badge/submodule-LTS+sub--branches-informational?style=flat-square&logo=git)](https://github.com/IndigoMultimediaTeam/lts-driven-git-submodules)
 # submodule_gulp
 Gulp utils – primary use as `git submodule`.
 
