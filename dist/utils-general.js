@@ -1,5 +1,6 @@
 /* jshint esversion: 6,-W097, -W040, node: true, expr: true, undef: true */
 const readline= require("readline");
+const log= (...args)=> console.log("["+(new Date()).toTimeString().split(" ")[0]+"]", "·".repeat("Starting".length), ...args);
 
 module.exports= {
 	/**
@@ -28,11 +29,10 @@ module.exports= {
 		*/
 		return (APPDATA || (process.platform == 'darwin' ? HOME + '/Library/Preferences' : HOME + "/.local/share"))+'/'+file_name;
 	},
-	log: (...args)=> console.log("["+(new Date()).toTimeString().split(" ")[0]+"]", "·".repeat("Starting".length), ...args),
+	log,
 	logProgress(...args){
 		const L= [ "|", "/", "–", "\\", "|", "/", "–", "\\" ];
 		const { length }= L;
-		const { log }= this;
 		const time_start= (new Date()).toLocaleTimeString("cs-CZ");
 		let l= 0;
 		
