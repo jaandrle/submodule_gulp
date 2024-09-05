@@ -9,6 +9,9 @@ module.exports= {
 	* */
 	currentBuildParams(defaults= { dev: true, target: null }){
 		const args= process.argv.slice(2);
+		const is_json= args.indexOf("--json");
+		if(is_json>=0) return Object.assign(defaults, JSON.parse(args[is_json+1]));
+		
 		let out= {};
 		for(let i=0, { length }= args, arg; i<length; i++){
 			arg= args[i].trim();
